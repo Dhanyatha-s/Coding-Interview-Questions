@@ -1,4 +1,8 @@
 # Coding-Interview-Questions-
+| Questions | Asked in |
+|------------|-----------|
+|Flip binary Numbers| IBM|
+|In-Order-Traverse| none |
 
 ### Question 1 Asked in IBM Software Developer Assessment 
 
