@@ -186,7 +186,9 @@ list.printList()
 list.head = list.reverse(list.head, 3)
 
 print("\nReversed list")
-list.printList()```
+list.printList()
+
+```
 
 
 
