@@ -4,6 +4,7 @@
 |Flip binary Numbers| IBM|
 |In-Order-Traverse| none |
 | Revese list in group of given size | Sigmoid |
+| String Compressor| IBM|
 
 ### Question 1 Asked in IBM Software Developer Assessment 
 
@@ -231,5 +232,44 @@ while user_input != '4':
     else:
         print("Please enter 1, 2, 3 or 4")
 ```
+### Question 4
+>Consider a string S that is a series of characters, each followed by its frequency as an integer. The string is not compressed correctly, so there may be multiple occurrences of the same character. A properly compressed string will consist of one instance of each character in alphabetical order, followed by the total count of the characters within the string.  
+>input s = 'a2b3a1c2n1c4'  
+>output  = 'a3b3c6n1'
 
+
+```
+class stringCompressor:
+    def __init__(self, s):
+        self.s = s
+
+    def compres(self):
+        
+        from collections import defaultdict
+
+        chat_count = defaultdict(int)
+        
+        # instace of char
+        i = 0
+
+        # Total len of string
+        n= len(self.s)
+
+        while i<n:
+            char = self.s[i]
+            i +=1
+            freq_start = i
+
+            while i < n and self.s[i].isdigit():
+                i+=1
+                freq = int(self.s[freq_start: i])
+                chat_count[char] += freq
+
+        return ''.join(f"{char}{chat_count[char]}" for char in sorted(chat_count))
+
+s = 'a2b3a1c2n1c4'
+compressor = stringCompressor(s)
+result = compressor.compres()
+print(result)
+````
 
