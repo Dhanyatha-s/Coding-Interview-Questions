@@ -5,6 +5,7 @@
 |In-Order-Traverse| none |
 | Revese list in group of given size | Sigmoid |
 | String Compressor| IBM|
+|Count the Absolute Difference| Accenture|
 
 ### Question 1 Asked in IBM Software Developer Assessment 
 
@@ -272,4 +273,32 @@ compressor = stringCompressor(s)
 result = compressor.compres()
 print(result)
 ````
+# Question 5
+### find the Absolute diffrence from the array of integer, has num of array and difference,  if empty array return -1 and if absolute diffrence when num is <= difference
+#### input :  12, 3, 14 ,56, 77, 13
+#### num : 13
+#### diff : 2
+#### Output : 3
+```
+>> 
+def find_count():
+    arr = [12, 3, 14 ,56, 77, 13]
+    num = 13
+    diff = 2
+    count = 0
+
+    
+    if len(arr) == 0:
+            return -1
+    
+    for i in arr:
+        abs_diff = abs(i - num)
+        if abs_diff <= diff:
+            count +=1
+            # print(count)
+    return count
+
+result = find_count()
+print(f'the count of absolute difference are {result}')
+```
 
