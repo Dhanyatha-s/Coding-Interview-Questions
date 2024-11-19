@@ -274,11 +274,11 @@ result = compressor.compres()
 print(result)
 ````
 ### Question 5
->> ### find the Absolute diffrence from the array of integer, has num of array and difference,  if empty array return -1 and if absolute diffrence when num is <= difference
-#### input :  12, 3, 14 ,56, 77, 13
-#### num : 13
-#### diff : 2
-#### Output : 3
+> ### find the Absolute diffrence from the array of integer, has num of array and difference,  if empty array return -1 and if absolute diffrence when num is <= difference
+> #### input :  12, 3, 14 ,56, 77, 13
+> #### num : 13
+> #### diff : 2
+> #### Output : 3
 ```
 >> 
 def find_count():
