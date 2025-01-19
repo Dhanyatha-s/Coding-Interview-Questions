@@ -6,6 +6,7 @@
 | Revese list in group of given size | Sigmoid |
 | String Compressor| IBM|
 |Count the Absolute Difference| Accenture|
+|Find the Entry_Ways for Rob to enter fair| Anonymous|
 
 ### Question 1 Asked in IBM Software Developer Assessment 
 
