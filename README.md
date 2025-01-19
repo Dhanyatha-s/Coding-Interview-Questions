@@ -301,4 +301,29 @@ def find_count():
 result = find_count()
 print(f'the count of absolute difference are {result}')
 ```
+### Quesstion 6 :  
+#### Rob wants to enter a fair which is in a  circular ground with n entryways. For each entryway, there is a lineup of EOI people waiting for their turn to enter their fair. Each entryway permits one person from its line per minute to avoid overcrowding. Rob initially joins the lineup at the first entryway. If he is not at the front of the line during a minute, he leaves his current line and goes to the end of the line at the next entryway or the first entryway if he is at the last entry. Find the entryway through which Rob enters the fair. Input format. The first line contains an integer n denoting the number of elements in A. Each line, i of the n subsequent lines with 0 less than or equal to i less than contains an integer describing the value of i.
+```
+def find_entryways(n, line_lengths):
 
+    current_entryways = 0
+    time = 0
+
+    while True:
+        if time % line_lengths[current_entryways] == 0:
+
+            return current_entryways + 1
+        else:
+
+            current_entryways = (current_entryways + 1) % n # circular entry
+            time += 1
+
+
+n = int(input("Enter the no of Entries: "))
+line_lengths = []
+for _ in range(n):
+    line_lengths.append(int(input("Enter the no of People in the line: ")))
+
+result = find_entryways(n, line_lengths)
+print(result)
+```
